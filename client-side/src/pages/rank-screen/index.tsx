@@ -30,8 +30,10 @@ export default function Index() {
       {loading ? (
         <Spinner />
       ) : (
-        <div className="w-[100vw] h-[100vh] bg-gray-400 flex flex-col justify-center items-center">
-          <span className="text-white font-bold">
+        <div className="w-[100vw] h-[100vh] flex  justify-center items-center bg-cover bg-right  "    style={{ backgroundImage: `url('images/home-page-image.jpg')` }}>
+         <div className="bg-black opacity-75 fixed top-0 right-0 left-0 bottom-0"></div>
+         <div className="flex flex-col bg-gray-400 z-50 p-10 rounded-md ">
+          <span className="  font-bold">
             {" "}
             Your Rank Is :
             <span className="font-bold text-black"> {rank?.toFixed(2)}</span>
@@ -42,6 +44,8 @@ export default function Index() {
           >
             Try Again
           </button>
+
+         </div>
         </div>
       )}
     </>

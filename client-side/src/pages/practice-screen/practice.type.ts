@@ -16,3 +16,5 @@
   }
 
   export type ClickHandler = (value:number ) => (e: React.MouseEvent) => void;
+
+  export type goQuestionClickHandler = () => (e: React.MouseEvent) => void;
